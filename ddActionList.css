@@ -1,0 +1,72 @@
+.ddActionList-menu{
+	text-align:right;
+	padding-bottom:3px;
+}
+.ddActionList-item{
+	cursor:pointer;
+	padding:2px;
+	margin-bottom:2px;
+	min-height:26px;
+	/*border:1px solid black;*/
+	border-radius:5px;
+}
+.ddActionList-item div.ddHandle{
+	display:inline-block;
+}
+.ddActionList-item img{
+	vertical-align:middle;
+	padding-right:5px;
+}
+.ddActionList-item .title{
+	font-size:11pt;
+	font-weight:bold;
+
+	padding-right:10px;
+	color: #42525B;
+}
+.ddActionList-item .description{
+	font-size:8pt;
+	color:#42525B;
+	
+}
+.ddActionList-item:hover{
+	background:#DFEFFC left bottom repeat-x url('/v11/images/tvImages/showbg.png');
+}
+.ddActionList-hiddenHeader{
+	font-weight:bold;
+	font-size:13pt;
+}
+.ddActionList-trash{
+	float:left;
+}
+.ddActionList-edit{
+	float:right;
+}
+.ui-state-error{
+	background-color:#FEF1EC !important;
+}
+.ddHandle .ui-icon{
+	height:14px;
+	display:inline-block;
+	padding-bottom:4px;
+}
+.ddHandle{
+	vertical-align:middle;
+}
+.placeholder{
+	text-align:center;
+	font-weight:bold;
+}
+
+/*Styles for the generated form*/
+
+.ddActionList-dialog label{
+	display:inline-block;
+	width:25%;
+	padding-right:5px;
+	font-weight:bold;
+	text-align:right;
+}
+.ddActionList-dialog textarea{
+	vertical-align:top;
+}
