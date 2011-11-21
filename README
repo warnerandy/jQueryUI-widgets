@@ -1,0 +1,2 @@
+Observable.js
+This object is intended to be extended through prototypal inheritance to allow objects to fire events and effect other objects while maintaining no knowledge of the listening objects. This allows for objects to be run in a vaccuum if needed and increases the overall stability of the program.
