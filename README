@@ -1,2 +1,4 @@
 ddActionList.js
 This jQueryUI object is designed to expediate the creation of lists with a full feature set. The template feature allows for designs to be created within the list while not requiring any new code within the object.
+
+TODO: change all jQuery event handlers from "live" to jQuery's new "on" event handler
