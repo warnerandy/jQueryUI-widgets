@@ -157,8 +157,6 @@ ddActionList
 				e.stopImmediatePropagation();
 			});
 
-			});
-
 			//hook up the add button
 			this.element.find('.ddActionList-menu .menuButton-add').live('click', this,function(e){
 				//add the new item to the list
