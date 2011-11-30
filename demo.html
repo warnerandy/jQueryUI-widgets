@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="ddActionList.css">
+</head>
+<body>
+<div class="actionlist"></div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="ddActionList.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.actionlist').ddActionList({
+		itemColumns:[{name:'id'},{name:'fileName'},{name:'filePath'},{name:'description'},{name:'private'}],
+			items:[
+				{id:1,fileName:'Google is a short name but want a long name to see what happens happens Google is a short name',filePath:'somehtm.pdf',defaultOrder:200, description:'this is some long description of the supporting material that can explain the purpose of the material. The field is limited to 250 characters s1234565',private:true},
+				{id:2,fileName:'Ping',filePath:'somepdf.ppt',defaultOrder:100, description:'what is my ip'},
+				{id:3,fileName:'xKcd',filePath:'http://xkcd.com',defaultOrder:300, description:'is it funny today?'}
+			],
+			template:'<span class="title">%fileName</span><span class="description">%description</span>',
+			newTemplate:'<div class="uploadButton">Upload</div><input type="file" class="upload">',
+			detailsForm:[{name:"Name",key:"fileName",type:"text"},{name:"Description",key:"description",type:"textarea"},{name:"Private",key:"private",type:"checkbox"}]
+	});
+});
+</script>
+</body>
+</html>
